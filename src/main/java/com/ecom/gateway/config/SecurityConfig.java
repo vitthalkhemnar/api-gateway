@@ -1,4 +1,4 @@
-package com.ecom.gateway.security;
+package com.ecom.gateway.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
