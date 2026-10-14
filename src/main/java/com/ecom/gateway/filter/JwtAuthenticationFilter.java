@@ -28,14 +28,18 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
 
 	private static final List<String> PUBLIC_PATHS = List.of(
 			"/**/auth/**",
-			"/auth/**"
+			"/**/auth"
 	);
 
 	private static final List<String> PUBLIC_GET_PATHS = List.of(
 			"/**/product/**",
+			"/**/product",
+			"/**/products/**",
+			"/**/products",
 			"/**/variant/**",
-			"/product/**",
-			"/variant/**"
+			"/**/variant",
+			"/**/variants/**",
+			"/**/variants"
 	);
 
 	private final AntPathMatcher pathMatcher = new AntPathMatcher();
